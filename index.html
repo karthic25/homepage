@@ -5,21 +5,21 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	    
-	    <!-- Font Awesome Icons -->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 
-	    <!-- Typewriter Font -->
-	    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnutypewriter" type="text/css"/>
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
 
-	    <!-- Hover CSS -->
-	    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css"/>
+		<!-- Typewriter Font -->
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnutypewriter" type="text/css">
 
-	    <!-- Custom CSS -->
-	    <link rel="stylesheet" media="screen" href="./styles.css" type="text/css"/>
-	    
+		<!-- Hover CSS -->
+		<link rel="stylesheet" media="screen" href="./css/hover-min.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" media="screen" href="./css/styles.css">
+
 	    <title>my_homepage</title>
 	    <style type="text/css">
 
@@ -28,54 +28,72 @@
 	
 	<body>
 	    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top justify-content-between">
-			<a class="navbar-brand" href="#">karthic p <i class="fa fa-home hvr-bounce-in" aria-hidden="true"></i></a>
+			<a class="navbar-brand" href="#">Karthic Palaniappan <i class="fa fa-home hvr-bounce-in" aria-hidden="true"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-identifier" aria-controls="collapse-identifier" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="collapse-identifier">
 				<div class="navbar-nav ml-auto">
-				    <a class="nav-item nav-link active" href="#section1" id="n1">about_me</a>
-				    <a class="nav-item nav-link" href="#section2" id="n2">acads</a>
-				    <a class="nav-item nav-link" href="#section3" id="n3">skills</a>
-				    <a class="nav-item nav-link" href="#section4" id="n4">contact_me</a>
+					<a class="nav-item nav-link" href="./resume.pdf" id="n1" target="_blank">Resume</a>
+				    <a class="nav-item nav-link active" href="#cluster" id="n2">Clustering</a>
+				    <a class="nav-item nav-link" href="#acads" id="n3">Experience</a>
+				    <a class="nav-item nav-link" href="#skills" id="n4">Skills</a>
+				    <a class="nav-item nav-link" href="#contact" id="n5">Contact</a>
 				</div>
 			</div>
 	    </nav>
 
     	<div class="container">
     		<div id="section0" class="row">
-				<h1 class="hvr-rotate">Welcome to my homepage!</h1>
-	    	</div>
+				<div class="col-lg-2 col-md-1 col-0"></div>
+				<div class="col-lg-8 col-md-10 col-12">
+				<h4 class="hvr-rotate">Welcome to my personal tech space! Explore demos of intriguing concepts I've encountered. Enjoy!
+				</h4>	    	
+				</div>
+				<div class="col-lg-2 col-md-1 col-0"></div>
+			</div>
 			<div id="section1" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./dp.jpg" alt="" /></figure>
+					<figure id="dp"><img src="./images/dp_2_clusters.png" alt="" width="100%" /></figure>
+					<input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;" data-title="Size: 4.6 kB">
+					<div class="slider-scale">
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span>7</span>
+						<span>8</span>
+						<span>9</span>
+						<span>10</span>
+					  </div>
 				</div>
 				<div class="col-lg-6 col-md-7 col-12">
-					<h1>about_me</h1>
-					<p>hey, i am a <b>software developer</b>, doing my undergrad @IITK</p>
-					<p>i'm engaged in the art of <b>solving real-life problems</b> using <b>software tools</b></p>
-					<p>my range of interests include <b>`application dev`</b> and <b>`data science`</b>, and i enjoy <b>automating stuff!</b></p>
+					<h1>Clustering</h1>
+					<p><b>Clustering of RGB colors</b> is a powerful technique used in <b>image compression</b>.</p>
+					<p>It works by grouping similar colors together into 'clusters', effectively reducing the number of unique colors in an image.</p>
+					<p>This <b>reduction in color diversity</b> leads to a smaller file size, thereby achieving <b>compression</b>.</p>
 				</div>
 				<div class="col-lg-2 col-md-1 col-0"></div>
 			</div>
 			<div id="section2" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
-				<div class="col-lg-6 col-md-7 col-12">
-					<h1>acads</h1>
-					<p>doing my <b>final year</b> in biological sciences and bioengineering, b.tech</p>
-					<p>i am enthusiastic about <b>computational applications of anything!</b></p>
-				</div>
-				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./books.jpg" alt="" /></figure>
+				<div class="col-lg-8 col-md-8 col-12">
+					<h1>Experience</h1>
+					<ul>
+						<li>> <b>MS, Computational Data Analytics</b>, Georgia Tech (2023-)</li>
+						<li>> <b>SDE in Machine Learning</b>, Xilinx, AMD (2020-2023)</li>
+						<li>> <b>B.Tech, Biological Sciences and Bioengineering</b>, IIT Kanpur (2016-2020)</li>
+					</ul>
 				</div>
 				<div class="col-lg-2 col-md-1 col-0"></div>
 			</div>
 			<div id="section3" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./coding.jpg" alt="" /></figure>
+					<figure><img class='rounded w-100' src="./images/coding.jpg" alt="" /></figure>
 				</div>
 				<div class="col-lg-6 col-md-7 col-12">
 					<h1>skills</h1>
@@ -94,7 +112,7 @@
 					<p>u can e-mail me at <a href="mailto:karthic2507@gmail.com">karthic2507@gmail.com</a></p>
 				</div>
 				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./contact.jpg" alt="" /></figure>
+					<figure><img class='rounded w-100' src="./images/contact.jpg" alt="" /></figure>
 				</div>
 				<div class="col-lg-2 col-md-1 col-0"></div>
 			</div>
@@ -113,6 +131,6 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	    
 	    <!-- Custom JS -->
-	    <script src="./scripts.js"></script>
+	    <script src="./js/scripts.js"></script>
   	</body>
 </html>

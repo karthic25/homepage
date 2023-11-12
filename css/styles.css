@@ -1,0 +1,185 @@
+/* Overall properties */
+body {
+	position: relative;
+	font-family: 'GNUTypewriterStandard';
+	font-weight: normal;
+	font-style: normal;
+	color: white;
+	background-color: #1a1a1a;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Sectionwise padding and color properties */
+#section0 {
+	padding: 100px 0px 0px 0px;
+}
+
+#section0 h4 {
+	text-align: center;
+	color: #808080;
+}
+
+#section1 {
+	padding: 50px 0px;
+}
+
+#section1 h1 {
+	color: #7aa84d;
+}
+
+#section2 {
+	padding: 50px 0px;
+}
+
+#section2 h1 {
+	color: #d19961;
+}
+
+#section3 {
+	padding: 50px 0px;
+}
+
+#section3 h1 {
+	color: #80ccff;
+}
+
+#section4 {
+	padding: 50px 0px;
+}
+
+#section4 h1 {
+	color: #a6a6a6;
+}
+
+/* Highligher */
+b {
+	color: #00b3b3;
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
+}
+
+
+
+/* Footer icons */
+/* size transitions */
+.social {
+	-webkit-transform: scale(0.8);
+	/* Browser Variations: */
+
+	-moz-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+}
+
+/* multicoloured hover variations */
+#social-gh:hover {
+	color: white;
+}
+
+#social-li:hover {
+	color: #0276b3;
+}
+
+#social-hp:hover {
+	color: #d34836;
+}
+
+#social-em:hover {
+	color: #f39c12;
+}
+
+.slider {
+	-webkit-appearance: none;
+	/* Override default CSS styles */
+	appearance: none;
+	width: 100%;
+	/* Full-width */
+	height: 10px;
+	/* Specified height */
+	background: #d3d3d3;
+	/* Grey background */
+	outline: none;
+	/* Remove outline */
+	opacity: 0.7;
+	/* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s;
+	/* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	padding: 0 12px 0 3px;
+}
+
+.slider:hover {
+	opacity: 1;
+	/* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/* Override default look */
+	appearance: none;
+	width: 2px;
+	/* Set a specific slider handle width */
+	height: 15px;
+	/* Slider handle height */
+	background: white;
+	/* Green background */
+	cursor: pointer;
+	/* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 2px;
+	/* Set a specific slider handle width */
+	height: 15px;
+	/* Slider handle height */
+	background: white;
+	/* Green background */
+	cursor: pointer;
+	/* Cursor on hover */
+}
+
+.slider-scale {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.slider-scale span {
+	position: relative;
+}
+
+input[type="range"] {
+  position: relative;
+}
+
+input[type="range"]:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  color: #fff;
+  padding: 2px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+	padding: 0;
+}
