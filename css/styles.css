@@ -13,41 +13,40 @@ html {
 }
 
 /* Sectionwise padding and color properties */
-#section0 {
-	padding: 100px 0px 0px 0px;
+#intro {
+	padding: 8em 0 0 0;
 }
 
-#section0 h4 {
-	text-align: center;
-	color: #808080;
+#intro h1 {
+	color: grey;
 }
 
-#section1 {
-	padding: 50px 0px;
+#experience {
+	padding: 3em 0 0 0;
 }
 
-#section1 h1 {
+#experience h1 {
 	color: #7aa84d;
 }
 
-#section2 {
-	padding: 50px 0px;
+#skills {
+	padding: 3em 0 0 0;
 }
 
-#section2 h1 {
+#skills h1 {
 	color: #d19961;
 }
 
-#section3 {
-	padding: 50px 0px;
+#contact {
+	padding: 3em 0 0 0;
 }
 
-#section3 h1 {
+#contact h1 {
 	color: #80ccff;
 }
 
 #section4 {
-	padding: 50px 0px;
+	padding: 3em 0 0 0;
 }
 
 #section4 h1 {
@@ -182,4 +181,46 @@ input[type="range"]:hover::after {
 ul {
     list-style-type: none;
 	padding: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 1em;
+}
+
+.arrow.right {
+    right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .arrow.left {
+        left: 1em;
+    }
+
+    .arrow.right {
+        right: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .arrow.left {
+        left: 3em;
+    }
+
+    .arrow.right {
+        right: 3em;
+    }
 }

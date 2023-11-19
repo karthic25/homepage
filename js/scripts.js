@@ -11,4 +11,16 @@ $(document).ready(function(){
         $(this).attr('data-title', 'Size: ' + imageSizes[value] + " kB");
     });
 
+    var contents = ['Content 1', 'Content 2', 'Content 3']; // Replace this with your actual contents
+    var currentIndex = 0;
+
+    function updateContent(direction) {
+        if (direction === 'left' && currentIndex > 0) {
+            currentIndex--;
+        } else if (direction === 'right' && currentIndex < contents.length - 1) {
+            currentIndex++;
+        }
+
+        document.getElementById('section1').innerHTML = contents[currentIndex];
+    }
 });

@@ -27,7 +27,7 @@
   	</head>
 	
 	<body>
-	    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top justify-content-between">
+	    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
 			<a class="navbar-brand" href="#">Karthic Palaniappan <i class="fa fa-home hvr-bounce-in" aria-hidden="true"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-identifier" aria-controls="collapse-identifier" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -35,26 +35,20 @@
 
 			<div class="collapse navbar-collapse" id="collapse-identifier">
 				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link" href="./resume.pdf" id="n1" target="_blank">Resume</a>
-				    <a class="nav-item nav-link active" href="#cluster" id="n2">Clustering</a>
-				    <a class="nav-item nav-link" href="#acads" id="n3">Experience</a>
-				    <a class="nav-item nav-link" href="#skills" id="n4">Skills</a>
+				    <a class="nav-item nav-link active" href="#intro" id="n2">Intro</a>
+				    <a class="nav-item nav-link" href="#experience" id="n3">Experience</a>
+				    <a class="nav-item nav-link" href="#demos" id="n4">Demos</a>
 				    <a class="nav-item nav-link" href="#contact" id="n5">Contact</a>
+					<a class="nav-item nav-link" href="./resume.pdf" id="n1" target="_blank">Resume</a>
 				</div>
 			</div>
 	    </nav>
 
     	<div class="container">
-    		<div id="section0" class="row">
-				<div class="col-lg-2 col-md-1 col-0"></div>
-				<div class="col-lg-8 col-md-10 col-12">
-				<h4 class="hvr-rotate">Welcome to my personal tech space! Explore demos of intriguing concepts I've encountered. Enjoy!
-				</h4>	    	
+			<div id="intro" class="row">
+				<div class="col-lg-2 col-md-1 col-1">
+					<!-- <div class="arrow left" onclick="updateContent('left')">&lt;</div> -->
 				</div>
-				<div class="col-lg-2 col-md-1 col-0"></div>
-			</div>
-			<div id="section1" class="row">
-				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-2 col-md-3 col-12">
 					<figure id="dp"><img src="./images/dp_2_clusters.png" alt="" width="100%" /></figure>
 					<input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;" data-title="Size: 4.6 kB">
@@ -71,26 +65,38 @@
 					  </div>
 				</div>
 				<div class="col-lg-6 col-md-7 col-12">
-					<h1>Clustering</h1>
+					<h1>Welcome to My Tech Space!</h1>
+					<p><b>karthic.ai</b> is the <b>digital hub</b> of my technical skillsets. Here, you'll find a blend of cutting-edge insights, personal reflections, and in-depth analysis on <b>ML</b>, <b>AI</b>, and <b>Compute</b>. Dive into my latest projects, work experiences, and interactive demos [WIP]!</p>
+					<!-- <h2>Clustering</h1>
 					<p><b>Clustering of RGB colors</b> is a powerful technique used in <b>image compression</b>.</p>
 					<p>It works by grouping similar colors together into 'clusters', effectively reducing the number of unique colors in an image.</p>
-					<p>This <b>reduction in color diversity</b> leads to a smaller file size, thereby achieving <b>compression</b>.</p>
+					<p>This <b>reduction in color diversity</b> leads to a smaller file size, thereby achieving <b>compression</b>.</p> -->
 				</div>
-				<div class="col-lg-2 col-md-1 col-0"></div>
+				<div class="col-lg-2 col-md-1 col-1">
+					<!-- <div class="arrow right" onclick="updateContent('right')">&gt;</div> -->
+				</div>
 			</div>
-			<div id="section2" class="row">
+			<div id="experience" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-8 col-md-8 col-12">
 					<h1>Experience</h1>
 					<ul>
-						<li>> <b>MS, Computational Data Analytics</b>, Georgia Tech (2023-)</li>
-						<li>> <b>SDE in Machine Learning</b>, Xilinx, AMD (2020-2023)</li>
-						<li>> <b>B.Tech, Biological Sciences and Bioengineering</b>, IIT Kanpur (2016-2020)</li>
+						<li>> <b>MS, Computational Data Analytics</b>, Georgia Tech
+							<img src="./images/gt.png" alt="GT Icon" style="height: 2em; vertical-align: middle; background-color: white;">
+							(2023-)</li>
+						<li>> <b>SDE in Machine Learning</b>, Xilinx
+							<img src="./images/xilinx.png" alt="Xilinx Icon" style="height: 1em; vertical-align: middle;">
+							, AMD
+							<img src="./images/amd.svg" alt="AMD Icon" style="height: 1em; vertical-align: middle;">
+							 (2020-2023)</li>
+						<li>> <b>B.Tech, Biological Sc. and Bioengineering</b>, IIT Kanpur
+							<img src="./images/iitk.png" alt="IITK Icon" style="height: 2em; vertical-align: middle; background-color: white;">
+							(2016-2020)</li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-1 col-0"></div>
 			</div>
-			<div id="section3" class="row">
+			<div id="skills" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-2 col-md-3 col-12">
 					<figure><img class='rounded w-100' src="./images/coding.jpg" alt="" /></figure>
@@ -103,13 +109,11 @@
 				</div>
 				<div class="col-lg-2 col-md-1 col-0"></div>
 			</div>
-			<div id="section4" class="row">
+			<div id="contact" class="row">
 				<div class="col-lg-2 col-md-1 col-0"></div>
 				<div class="col-lg-6 col-md-7 col-12">
-					<h1>contact_me</h1>
-					<p>i stay at hall 9, iitk</p>
-					<p>my git repo: <a href="https://github.com/karthic25">karthic25</a></p>
-					<p>u can e-mail me at <a href="mailto:karthic2507@gmail.com">karthic2507@gmail.com</a></p>
+					<h1>Contact</h1>
+					<p>Checkout my Github repos <a href="https://github.com/karthic25">here</a>. Feel free to reach out via LinkedIn <a href="https://linkedin.com/in/karthicp">here</a> or email <a href="mailto:karthic2507@gmail.com">here</a>.</p>
 				</div>
 				<div class="col-lg-2 col-md-3 col-12">
 					<figure><img class='rounded w-100' src="./images/contact.jpg" alt="" /></figure>
