@@ -1,4 +1,5 @@
 /* Overall properties */
+/* Set the position of the body to relative and apply a specific font and color scheme */
 body {
 	position: relative;
 	font-family: 'GNUTypewriterStandard';
@@ -8,49 +9,9 @@ body {
 	background-color: #1a1a1a;
 }
 
+/* Enable smooth scrolling behavior for the entire HTML document */
 html {
 	scroll-behavior: smooth;
-}
-
-/* Sectionwise padding and color properties */
-#intro {
-	padding: 8em 0 0 0;
-}
-
-#intro h1 {
-	color: grey;
-}
-
-#experience {
-	padding: 3em 0 0 0;
-}
-
-#experience h1 {
-	color: #7aa84d;
-}
-
-#skills {
-	padding: 3em 0 0 0;
-}
-
-#skills h1 {
-	color: #d19961;
-}
-
-#contact {
-	padding: 3em 0 0 0;
-}
-
-#contact h1 {
-	color: #80ccff;
-}
-
-#section4 {
-	padding: 3em 0 0 0;
-}
-
-#section4 h1 {
-	color: #a6a6a6;
 }
 
 /* Highligher */
@@ -69,14 +30,41 @@ b {
 	}
 }
 
+/* Sectionwise padding and color properties */
+/* Each section has its own padding and color properties */
+/* The #intro section has a padding of 8em at the top */
+#intro {
+	padding: 8em 0 0 0;
+}
 
+#experience, #skills, #contact, #section4 {
+	padding: 3em 0 0 0;
+}
+
+#intro h1 {
+	color: grey;
+}
+
+#experience h1 {
+	color: #7aa84d;
+}
+
+#skills h1 {
+	color: #d19961;
+}
+
+#contact h1 {
+	color: #80ccff;
+}
+
+#section4 h1 {
+	color: #a6a6a6;
+}
 
 /* Footer icons */
-/* size transitions */
+/* The .social class is used to scale the footer icons and apply a transition duration */
 .social {
 	-webkit-transform: scale(0.8);
-	/* Browser Variations: */
-
 	-moz-transform: scale(0.8);
 	-o-transform: scale(0.8);
 	-webkit-transition-duration: 0.5s;
@@ -84,7 +72,7 @@ b {
 	-o-transition-duration: 0.5s;
 }
 
-/* multicoloured hover variations */
+/* The hover state of the footer icons is colored differently */
 #social-gh:hover {
 	color: white;
 }
@@ -101,56 +89,42 @@ b {
 	color: #f39c12;
 }
 
+/* The .slider class is used to style the range in intro section */
 .slider {
 	-webkit-appearance: none;
-	/* Override default CSS styles */
 	appearance: none;
 	width: 100%;
-	/* Full-width */
 	height: 10px;
-	/* Specified height */
 	background: #d3d3d3;
-	/* Grey background */
 	outline: none;
-	/* Remove outline */
 	opacity: 0.7;
-	/* Set transparency (for mouse-over effects on hover) */
 	-webkit-transition: .2s;
-	/* 0.2 seconds transition on hover */
 	transition: opacity .2s;
 	padding: 0 12px 0 3px;
 }
 
 .slider:hover {
 	opacity: 1;
-	/* Fully shown on mouse-over */
 }
 
+/* A slider thumb is the handle */
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	/* Override default look */
 	appearance: none;
 	width: 2px;
-	/* Set a specific slider handle width */
 	height: 15px;
-	/* Slider handle height */
 	background: white;
-	/* Green background */
 	cursor: pointer;
-	/* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
 	width: 2px;
-	/* Set a specific slider handle width */
 	height: 15px;
-	/* Slider handle height */
 	background: white;
-	/* Green background */
 	cursor: pointer;
-	/* Cursor on hover */
 }
 
+/* The .slider-scale class is used to display the slider scale */
 .slider-scale {
 	display: flex;
 	justify-content: space-between;
@@ -161,16 +135,12 @@ b {
 	position: relative;
 }
 
-input[type="range"] {
-  position: relative;
-}
-
+/* slider tooltip when hovered shows file size */
 input[type="range"]:hover::after {
   content: attr(data-title);
   position: absolute;
-  top: -2em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -110%);
   background: #000;
   color: #fff;
   padding: 2px;
@@ -178,49 +148,54 @@ input[type="range"]:hover::after {
   white-space: nowrap;
 }
 
+/* experience section's list without bullets and padding */
 ul {
-    list-style-type: none;
+	list-style-type: none;
 	padding: 0;
 }
 
+/* demo section's arrow style */
 .arrow {
-    position: absolute;
-    top: 50%;
-    font-size: 2em;
-    color: #ffffff;
-    cursor: pointer;
+	position: absolute;
+	top: 50%;
+	font-size: 2em;
+	color: #ffffff;
+	cursor: pointer;
 }
 
+/* left arrow padding */
 .arrow.left {
-    left: 1em;
+	left: 1em;
 }
 
+/* right arrow padding */
 .arrow.right {
-    right: 1em;
+	right: 1em;
 }
 
+/* arrow positioning based on viewport */
 @media screen and (max-width: 768px) {
-    .arrow {
-        display: none;
-    }
+	.arrow {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .arrow.left {
-        left: 1em;
-    }
+	.arrow.left {
+		left: 1em;
+	}
 
-    .arrow.right {
-        right: 1em;
-    }
+	.arrow.right {
+		right: 1em;
+	}
 }
 
 @media screen and (min-width: 992px) {
-    .arrow.left {
-        left: 3em;
-    }
+	.arrow.left {
+		left: 3em;
+	}
 
-    .arrow.right {
-        right: 3em;
-    }
+	.arrow.right {
+		right: 3em;
+	}
 }

@@ -1,140 +1,173 @@
 <!doctype html>
 <html lang="en">
-	<head>
-	    <!-- Required meta tags -->
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Font Awesome Icons -->
-		<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 
-		<!-- Typewriter Font -->
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnutypewriter" type="text/css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
 
-		<!-- Hover CSS -->
-		<link rel="stylesheet" media="screen" href="./css/hover-min.css">
+	<!-- Typewriter Font -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnutypewriter" type="text/css">
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" media="screen" href="./css/styles.css">
+	<!-- Hover CSS -->
+	<link rel="stylesheet" media="screen" href="./css/hover-min.css">
 
-	    <title>my_homepage</title>
-	    <style type="text/css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" media="screen" href="./css/styles.css">
 
-	    </style>
-  	</head>
-	
-	<body>
-	    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
-			<a class="navbar-brand" href="#">Karthic Palaniappan <i class="fa fa-home hvr-bounce-in" aria-hidden="true"></i></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-identifier" aria-controls="collapse-identifier" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<title>my_homepage</title>
+	<style type="text/css">
 
-			<div class="collapse navbar-collapse" id="collapse-identifier">
-				<div class="navbar-nav ml-auto">
-				    <a class="nav-item nav-link active" href="#intro" id="n2">Intro</a>
-				    <a class="nav-item nav-link" href="#experience" id="n3">Experience</a>
-				    <a class="nav-item nav-link" href="#demos" id="n4">Demos</a>
-				    <a class="nav-item nav-link" href="#contact" id="n5">Contact</a>
-					<a class="nav-item nav-link" href="./resume.pdf" id="n1" target="_blank">Resume</a>
+	</style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
+		<a class="navbar-brand" href="#">Karthic Palaniappan <i class="fa fa-home hvr-bounce-in"
+				aria-hidden="true"></i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-identifier"
+			aria-controls="collapse-identifier" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+        <!-- Navigation links -->
+		<div class="collapse navbar-collapse" id="collapse-identifier">
+			<div class="navbar-nav ml-auto">
+				<a class="nav-item nav-link active" href="#intro" id="n2">Intro</a>
+				<a class="nav-item nav-link" href="#experience" id="n3">Experience</a>
+				<a class="nav-item nav-link" href="#demos" id="n4">Demos</a>
+				<a class="nav-item nav-link" href="#contact" id="n5">Contact</a>
+				<a class="nav-item nav-link" href="./resume.pdf" id="n1" target="_blank">Resume</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+        <!-- Intro section -->
+		<div id="intro" class="row">
+			<div class="col-lg-2 col-md-1 col-1">
+				<!-- <div class="arrow left" onclick="updateContent('left')">&lt;</div> -->
+			</div>
+			<div class="col-lg-2 col-md-3 col-12">
+				<figure id="dp"><img src="./images/dp_2_clusters.png" alt="" width="100%" /></figure>
+				<input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;"
+					data-title="Size: 4.6 kB">
+				<div class="slider-scale">
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+					<span>7</span>
+					<span>8</span>
+					<span>9</span>
+					<span>10</span>
 				</div>
 			</div>
-	    </nav>
-
-    	<div class="container">
-			<div id="intro" class="row">
-				<div class="col-lg-2 col-md-1 col-1">
-					<!-- <div class="arrow left" onclick="updateContent('left')">&lt;</div> -->
-				</div>
-				<div class="col-lg-2 col-md-3 col-12">
-					<figure id="dp"><img src="./images/dp_2_clusters.png" alt="" width="100%" /></figure>
-					<input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;" data-title="Size: 4.6 kB">
-					<div class="slider-scale">
-						<span>2</span>
-						<span>3</span>
-						<span>4</span>
-						<span>5</span>
-						<span>6</span>
-						<span>7</span>
-						<span>8</span>
-						<span>9</span>
-						<span>10</span>
-					  </div>
-				</div>
-				<div class="col-lg-6 col-md-7 col-12">
-					<h1>Welcome to My Tech Space!</h1>
-					<p><b>karthic.ai</b> is the <b>digital hub</b> of my technical skillsets. Here, you'll find a blend of cutting-edge insights, personal reflections, and in-depth analysis on <b>ML</b>, <b>AI</b>, and <b>Compute</b>. Dive into my latest projects, work experiences, and interactive demos [WIP]!</p>
-					<!-- <h2>Clustering</h1>
+			<div class="col-lg-6 col-md-7 col-12">
+				<h1>Welcome to My Tech Space!</h1>
+				<p><b>karthic.ai</b> is the <b>digital hub</b> of my technical skillsets. Here, you'll find a blend of
+					cutting-edge insights, personal reflections, and in-depth analysis on <b>ML</b>, <b>AI</b>, and
+					<b>Compute</b>. Dive into my latest projects, work experiences, and interactive demos [WIP]!</p>
+				<!-- <h2>Clustering</h1>
 					<p><b>Clustering of RGB colors</b> is a powerful technique used in <b>image compression</b>.</p>
 					<p>It works by grouping similar colors together into 'clusters', effectively reducing the number of unique colors in an image.</p>
 					<p>This <b>reduction in color diversity</b> leads to a smaller file size, thereby achieving <b>compression</b>.</p> -->
-				</div>
-				<div class="col-lg-2 col-md-1 col-1">
-					<!-- <div class="arrow right" onclick="updateContent('right')">&gt;</div> -->
-				</div>
 			</div>
-			<div id="experience" class="row">
-				<div class="col-lg-2 col-md-1 col-0"></div>
-				<div class="col-lg-8 col-md-8 col-12">
-					<h1>Experience</h1>
-					<ul>
-						<li>> <b>MS, Computational Data Analytics</b>, Georgia Tech
-							<img src="./images/gt.png" alt="GT Icon" style="height: 2em; vertical-align: middle; background-color: white;">
-							(2023-)</li>
-						<li>> <b>SDE in Machine Learning</b>, Xilinx
-							<img src="./images/xilinx.png" alt="Xilinx Icon" style="height: 1em; vertical-align: middle;">
-							, AMD
-							<img src="./images/amd.svg" alt="AMD Icon" style="height: 1em; vertical-align: middle;">
-							 (2020-2023)</li>
-						<li>> <b>B.Tech, Biological Sc. and Bioengineering</b>, IIT Kanpur
-							<img src="./images/iitk.png" alt="IITK Icon" style="height: 2em; vertical-align: middle; background-color: white;">
-							(2016-2020)</li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-1 col-0"></div>
+			<div class="col-lg-2 col-md-1 col-1">
+				<!-- <div class="arrow right" onclick="updateContent('right')">&gt;</div> -->
 			</div>
-			<div id="skills" class="row">
-				<div class="col-lg-2 col-md-1 col-0"></div>
-				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./images/coding.jpg" alt="" /></figure>
-				</div>
-				<div class="col-lg-6 col-md-7 col-12">
-					<h1>skills</h1>
-					<p>this webpage is build on <b>bootstrap4, jquery</b></p>
-					<p>am also proficient with <b>nodejs in middleware</b>, <b>expressjs in backend</b>, <b>sql-server in dbms</b></p>
-					<p>u can find much more of my skillsets in my <a href="./resume.pdf" target="_blank">resume</a></p>
-				</div>
-				<div class="col-lg-2 col-md-1 col-0"></div>
+		</div>
+		
+        <!-- Experience section -->
+		<div id="experience" class="row">
+			<div class="col-lg-2 col-md-1 col-0"></div>
+			<div class="col-lg-8 col-md-8 col-12">
+				<h1>Experience</h1>
+				<ul>
+					<li>> <b>MS, Computational Data Analytics</b>, Georgia Tech
+						<img src="./images/gt.png" alt="GT Icon"
+							style="height: 2em; vertical-align: middle; background-color: white;">
+						(2023-)
+					</li>
+					<li>> <b>SDE in Machine Learning</b>, Xilinx
+						<img src="./images/xilinx.png" alt="Xilinx Icon" style="height: 1em; vertical-align: middle;">
+						, AMD
+						<img src="./images/amd.svg" alt="AMD Icon" style="height: 1em; vertical-align: middle;">
+						(2020-2023)
+					</li>
+					<li>> <b>B.Tech, Biological Sc. and Bioengineering</b>, IIT Kanpur
+						<img src="./images/iitk.png" alt="IITK Icon"
+							style="height: 2em; vertical-align: middle; background-color: white;">
+						(2016-2020)
+					</li>
+				</ul>
 			</div>
-			<div id="contact" class="row">
-				<div class="col-lg-2 col-md-1 col-0"></div>
-				<div class="col-lg-6 col-md-7 col-12">
-					<h1>Contact</h1>
-					<p>Checkout my Github repos <a href="https://github.com/karthic25">here</a>. Feel free to reach out via LinkedIn <a href="https://linkedin.com/in/karthicp">here</a> or email <a href="mailto:karthic2507@gmail.com">here</a>.</p>
-				</div>
-				<div class="col-lg-2 col-md-3 col-12">
-					<figure><img class='rounded w-100' src="./images/contact.jpg" alt="" /></figure>
-				</div>
-				<div class="col-lg-2 col-md-1 col-0"></div>
-			</div>
+			<div class="col-lg-2 col-md-1 col-0"></div>
 		</div>
 
-        <div class="text-center center-block">
-            <a href="https://www.github.com/karthic25"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
-            <a href="https://www.linkedin.com/in/karthicp/"><i id="social-li" class="fa fa-linkedin-square fa-3x social"></i></a>
-            <a href="http://home.iitk.ac.in/~pkarthic"><i id="social-hp" class="fa fa-globe fa-3x social"></i></a>
-            <a href="mailto:karthic2507@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        <!-- Skills section -->
+		<div id="skills" class="row">
+			<div class="col-lg-2 col-md-1 col-0"></div>
+			<div class="col-lg-2 col-md-3 col-12">
+				<figure><img class='rounded w-100' src="./images/coding.jpg" alt="" /></figure>
+			</div>
+			<div class="col-lg-6 col-md-7 col-12">
+				<h1>skills</h1>
+				<p>this webpage is build on <b>bootstrap4, jquery</b></p>
+				<p>am also proficient with <b>nodejs in middleware</b>, <b>expressjs in backend</b>, <b>sql-server in
+						dbms</b></p>
+				<p>u can find much more of my skillsets in my <a href="./resume.pdf" target="_blank">resume</a></p>
+			</div>
+			<div class="col-lg-2 col-md-1 col-0"></div>
 		</div>
-	    <!-- Optional JavaScript -->
-	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	    
-	    <!-- Custom JS -->
-	    <script src="./js/scripts.js"></script>
-  	</body>
+
+        <!-- Contact section -->
+		<div id="contact" class="row">
+			<div class="col-lg-2 col-md-1 col-0"></div>
+			<div class="col-lg-6 col-md-7 col-12">
+				<h1>Contact</h1>
+				<p>Checkout my Github repos <a href="https://github.com/karthic25">here</a>. Feel free to reach out via
+					LinkedIn <a href="https://linkedin.com/in/karthicp">here</a> or email <a
+						href="mailto:karthic2507@gmail.com">here</a>.</p>
+			</div>
+			<div class="col-lg-2 col-md-3 col-12">
+				<figure><img class='rounded w-100' src="./images/contact.jpg" alt="" /></figure>
+			</div>
+			<div class="col-lg-2 col-md-1 col-0"></div>
+		</div>
+	</div>
+
+    <!-- Social media links -->
+	<div class="text-center center-block">
+		<a href="https://www.github.com/karthic25"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+		<a href="https://www.linkedin.com/in/karthicp/"><i id="social-li"
+				class="fa fa-linkedin-square fa-3x social"></i></a>
+		<a href="http://home.iitk.ac.in/~pkarthic"><i id="social-hp" class="fa fa-globe fa-3x social"></i></a>
+		<a href="mailto:karthic2507@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- Custom JS -->
+	<script src="./js/scripts.js"></script>
+</body>
+
 </html>
