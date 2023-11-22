@@ -1,0 +1,107 @@
+@import './base.css';
+
+body {
+	position: relative;
+	font-family: 'GNUTypewriterStandard';
+	font-weight: normal;
+	font-style: normal;
+	color: white;
+	background-color: #1a1a1a;
+}
+
+/* Enable smooth scrolling behavior for the entire HTML document */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Highligher */
+b {
+	color: #00b3b3;
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(255, 255, 255, .75);
+	}
+
+	to {
+		border-right-color: transparent;
+	}
+}
+
+/* Sectionwise padding and color properties */
+/* Each section has its own padding and color properties */
+/* The #intro section has a padding of 8em at the top */
+
+#experience, #skills, #contact, #section4 {
+	padding: 3em 0 0 0;
+}
+
+#experience h1 {
+	color: #7aa84d;
+}
+
+#skills h1 {
+	color: #d19961;
+}
+
+#contact h1 {
+	color: #80ccff;
+}
+
+#section4 h1 {
+	color: #a6a6a6;
+}
+
+/* experience section's list without bullets and padding */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* demo section's arrow style */
+.arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 2em;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* left arrow padding */
+.arrow.left {
+	left: 1em;
+}
+
+/* right arrow padding */
+.arrow.right {
+	right: 1em;
+}
+
+/* arrow positioning based on viewport */
+@media screen and (max-width: 768px) {
+	.arrow {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.arrow.left {
+		left: 1em;
+	}
+
+	.arrow.right {
+		right: 1em;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.arrow.left {
+		left: 3em;
+	}
+
+	.arrow.right {
+		right: 3em;
+	}
+}
