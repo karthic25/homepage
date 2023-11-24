@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="collapse-identifier">
       <div class="navbar-nav ml-auto">
         <a class="nav-item nav-link" v-for="item in navItems" :href="item.href" :id="item.id"
-          :target="item.target">{{ item.text }}</a>
+          :target="item.target" :class="{ active: item.active }">{{ item.text }}</a>
       </div>
     </div>
   </nav>
@@ -34,11 +34,11 @@
       return {
         navLogo: 'Karthic Palaniappan',
         navItems: [
-            { id: 'n1', href: '#intro', text: 'Intro' },
-            { id: 'n2', href: '#experience', text: 'Experience' },
-            { id: 'n3', href: '#demos', text: 'Demos' },
-            { id: 'n4', href: '#contact', text: 'Contact' },
-            { id: 'n5', href: './resume.pdf', text: 'Resume', target: '_blank' },
+            { id: 'n1', href: '#intro', text: 'Intro', active: true },
+            { id: 'n2', href: '#projects', text: 'Projects', active: false },
+            { id: 'n3', href: '#experience', text: 'Experience', active: false },
+            { id: 'n4', href: '#contact', text: 'Contact', active: false },
+            { id: 'n5', href: '/src/assets/resume.pdf', text: 'Resume', target: '_blank', active: false },
         ]
       }
     }

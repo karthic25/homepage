@@ -1,27 +1,50 @@
+<script>
+    import ClickBox from './ClickBox.vue';
+
+    export default {
+        components: {
+            ClickBox
+        }
+    }
+</script>
+
 <template>
     <div id="experience" class="row">
-        <div class="col-md-1 col-0"></div>
-        <div class="col-md-10 col-12">
-            <h1>Experience</h1>
+        <div class="col-12">
+            <h2 class="c7">Experience</h2>
             <ul>
-                <li>> <b>MS, Computational Data Analytics</b>, Georgia Tech
-                    <img src="/src/assets/img/gt.png" alt="GT Icon"
-                        style="height: 2em; vertical-align: middle; background-color: white;">
+                <li>> <b class="c1">MS, Computational Data Analytics</b> @ <ClickBox imgSrc="gt.png" alt="GT">Georgia Tech</ClickBox>
                     (2023-)
                 </li>
-                <li>> <b>SDE in Machine Learning</b>, Xilinx
-                    <img src="/src/assets/img/xilinx.png" alt="Xilinx Icon" style="height: 1em; vertical-align: middle;">
-                    , AMD
-                    <img src="/src/assets/img/amd.svg" alt="AMD Icon" style="height: 1em; vertical-align: middle;">
+                <li>> <b class="c1">SDE in Machine Learning</b> @
+                    <ClickBox imgSrc="amd.svg" alt="AMD">AMD</ClickBox>, <ClickBox imgSrc="xilinx.png" alt="Xilinx">Xilinx</ClickBox>
                     (2020-2023)
                 </li>
-                <li>> <b>B.Tech, Biological Sc. and Bioengineering</b>, IIT Kanpur
-                    <img src="/src/assets/img/iitk.png" alt="IITK Icon"
-                        style="height: 2em; vertical-align: middle; background-color: white;">
+                <li>> <b class="c1">B.Tech, Biological Sc. and Bioengineering</b> @ <ClickBox imgSrc="iitk.png" alt="IITK" >IIT Kanpur</ClickBox>
                     (2016-2020)
+                    <ul>
+                        <li>>> Tools for Cognitive Development, <b class="c5">Lab of Neural Systems</b>, Prof. Nitin Gupta
+                        </li>
+                        <li>>> Full-Stack Dev, <b class="c5">Sanzorgo</b>, Startup Incubated at IITK
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <div class="col-md-1 col-0"></div>
     </div>
 </template>
+
+<style scoped>
+    #experience ul {
+        list-style-type: none;
+    }
+    #experience li {
+        margin-bottom: 0.5em;
+    }
+    #experience li > ul {
+        margin-left: 1em;
+    }
+    #experience li > ul > li {
+        margin-bottom: 0em;
+    }
+</style>

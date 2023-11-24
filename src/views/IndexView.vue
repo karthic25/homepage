@@ -2,14 +2,16 @@
 import Navbar from '../components/Navbar.vue'
 import Intro from '../components/Intro.vue'
 import Experience from '../components/Experience.vue'
-import Footer from '../components/Footer.vue'
+import Projects from '../components/Projects.vue'
+import Contact from '../components/Contact.vue'
 </script>
 
 <template>
   <Navbar />
   <div class="container">
     <Intro />
+    <Projects />
     <Experience />
-    <Footer />
+    <Contact />
   </div>
 </template>

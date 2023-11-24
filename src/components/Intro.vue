@@ -1,25 +1,14 @@
 <template>
-    <div id="intro" class="row">
-        <div class="col-xl-1 col-md-1 col-0">
-            <!-- <div class="arrow left" onclick="updateContent('left')">&lt;</div> -->
-        </div>
-        <div class="col-xl-2 col-md-3 col-12">
+    <div id="intro" class="row d-flex align-items-center">
+        <div class="col-lg-3 col-md-4 col-12">
             <figure id="dp"><img src="/src/assets/img/dp_2_clusters.png" alt=""  style="width: 100%;" /></figure>
             <input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;" data-title="Size: 4.6 kB" />
             <div class="slider-scale">
                 <span v-for="n in 9" :key="n">{{ n + 1 }}</span>
             </div>
         </div>
-        <div class="col-xl-8 col-md-7 col-12">
-            <h1>{{ title }}</h1>
+        <div class="col-lg-9 col-md-8 col-12">
             <p v-html="message"></p>
-            <!-- <h2>Clustering</h1>
-                <p><b>Clustering of RGB colors</b> is a powerful technique used in <b>image compression</b>.</p>
-                <p>It works by grouping similar colors together into 'clusters', effectively reducing the number of unique colors in an image.</p>
-                <p>This <b>reduction in color diversity</b> leads to a smaller file size, thereby achieving <b>compression</b>.</p> -->
-        </div>
-        <div class="col-xl-1 col-md-1 col-0">
-            <!-- <div class="arrow right" onclick="updateContent('right')">&gt;</div> -->
         </div>
     </div>
 </template>
@@ -42,12 +31,16 @@
             return {
                 'title': 'Welcome to my Tech Space!',
                 'message': `
-                "It’s still hard to explain what can be so fascinating about beating your head against the wall for three days, not knowing how to solve something the better way, the beautiful way. But once you find that way, it’s the greatest feeling in the world." ~<b>Linus Torvalds</b>
+                <b class="c1">Linus Torvalds, JFF, II:5:-1</b>: "It’s still hard to explain what can be so fascinating about beating your head against the wall for three days, not knowing how to solve something the better way, the beautiful way. But once you find that way, it’s the greatest feeling in the world." 
 
                 <br><br>
-                
-                I develop software because it's fun. This is a showcase of my "fun" projects, themed on <b>ML</b>, <b>AI</b>, and
-                <b>Efficient Compute</b>.
+
+                <b class="c1">Welcome to my tech space!</b>
+
+                <br><br>
+
+                I develop software because it's fun. This is a showcase of my "fun" projects, themed on <b class="c1">ML</b>, <b class="c1">AI</b>, and
+                <b class="c1">Efficient Compute</b>.
                 `
             }
         }

@@ -5,10 +5,24 @@ body {
 	font-family: 'GNUTypewriterStandard';
 	font-weight: normal;
 	font-style: normal;
-	color: white;
-	background-color: #1a1a1a;
+	padding-left: 0;
+	padding-right: 0;
 }
 
+@media (min-width: 768px) {
+	body {
+		padding-left: calc(100vw / 12);
+		padding-right: calc(100vw / 12);
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		padding-left: calc(100vw * 2 / 12);
+		padding-right: calc(100vw * 2 / 12);
+	}
+}
+  
 /* Enable smooth scrolling behavior for the entire HTML document */
 html {
 	scroll-behavior: smooth;
@@ -16,7 +30,7 @@ html {
 
 /* Highligher */
 b {
-	color: #00b3b3;
+	font-weight: normal;
 }
 
 /* cursor animations */
@@ -30,28 +44,36 @@ b {
 	}
 }
 
-/* Sectionwise padding and color properties */
-/* Each section has its own padding and color properties */
-/* The #intro section has a padding of 8em at the top */
-
-#experience, #skills, #contact, #section4 {
-	padding: 3em 0 0 0;
+/* Colors */
+.c1 {
+	color: #00b3b3 !important;
 }
-
-#experience h1 {
-	color: #7aa84d;
+.c2 {
+	color: pink !important;
 }
-
-#skills h1 {
+.c3 {
+	color: gold !important;
+}
+.c4 {
+	color: white;
+}
+.c5 {
 	color: #d19961;
 }
-
-#contact h1 {
+.c6 {
 	color: #80ccff;
 }
-
-#section4 h1 {
+.c7 {
 	color: #a6a6a6;
+}
+
+.bc1 {
+	background-color: #1a1a1a
+}
+
+/* row padding */
+.row {
+	padding: 3em 0 0 0;
 }
 
 /* experience section's list without bullets and padding */
