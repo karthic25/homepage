@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between">
-    <a class="navbar-brand" href="#">{{ navLogo }}<i class="fa fa-home hvr-bounce-in" aria-hidden="true"></i></a>
+    <a class="navbar-brand title-font" href="#">{{ navLogo }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-identifier"
       aria-controls="collapse-identifier" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

@@ -1,8 +1,22 @@
 @import './base.css';
 
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Workbench-Regular-VariableFont_BLED,SCAN.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(../fonts/NanumGothic-Regular.ttf);
+}
+
+title-font {
+	font-family: 'titleFont';
+}
+
 body {
 	position: relative;
-	font-family: 'GNUTypewriterStandard';
+	font-family: 'bodyFont';
 	font-weight: normal;
 	font-style: normal;
 	padding-left: 0;
