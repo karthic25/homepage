@@ -14,6 +14,12 @@ export default defineConfig({
       key: fs.readFileSync('./key.pem'),
       cert: fs.readFileSync('./cert.pem'),
     },
+    watch: {
+      usePolling: true, // Optional: Use polling if file changes are not detected
+    },
+    hmr: {
+      overlay: true, // Enable HMR overlay for error messages
+    },
   },
   resolve: {
     alias: {
