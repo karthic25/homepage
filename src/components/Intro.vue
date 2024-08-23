@@ -1,13 +1,13 @@
 <template>
     <div id="intro" class="row d-flex align-items-center">
-        <div class="col-lg-3 col-md-4 col-12">
+        <div class="col-md-4 col-12">
             <figure id="dp"><img src="/src/assets/img/dp_2_clusters.png" alt=""  style="width: 100%;" /></figure>
             <input type="range" min="2" max="10" value="2" class="slider" id="myRange" style="width: 100%;" data-title="Size: 4.6 kB" />
             <div class="slider-scale">
                 <span v-for="n in 9" :key="n">{{ n + 1 }}</span>
             </div>
         </div>
-        <div class="col-lg-9 col-md-8 col-12">
+        <div class="col-md-8 col-12">
             <p v-html="message"></p>
         </div>
     </div>
