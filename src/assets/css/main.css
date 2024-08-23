@@ -25,15 +25,15 @@ body {
 
 @media (min-width: 768px) {
 	body {
-		padding-left: calc(100vw / 12);
-		padding-right: calc(100vw / 12);
+		padding-left: calc(100vw * 2 / 12);
+		padding-right: calc(100vw * 2 / 12);
 	}
 }
 
 @media (min-width: 1200px) {
 	body {
-		padding-left: calc(100vw * 2 / 12);
-		padding-right: calc(100vw * 2 / 12);
+		padding-left: calc(100vw * 3 / 12);
+		padding-right: calc(100vw * 3 / 12);
 	}
 }
   
